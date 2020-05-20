@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html ng-app="moreDirectiveApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <h1>More Directive App</h1>
+    <div ng-controller="MoreDirectiveController as crtl">
+        <input type="checkbox" ng-model="ctrl.checked"/>
+        <p ng-hide="ctrl.checked">Show some content</p>
+    </div>
+  
+</body>
+</html>

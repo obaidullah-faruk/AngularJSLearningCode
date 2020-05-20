@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html ng-app="ngModelExamples">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body ng-controller="ExamplesCtrl">
+    <h1>ngModel Examples App</h1>
+    <p>Testbox: <input type="text" ng-change="textboxChange()" ng-model="textString" /></p>
+    <p>Checkbox: <input type="checkbox" ng-model="booleanValue" /></p>
+
+    <div>
+      <p>Test input: {{textString}}</p>
+      <p>Check box: {{booleanValue}}</p>
+    </div>
+</body>
+</html>

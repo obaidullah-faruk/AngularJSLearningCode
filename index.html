@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Angular JS</title>
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <h1>Hello Angular</h1>
+        <p ng-if="hourOfDay < 12">Good Morning</p> 
+        <p ng-if="hourOfDay > 17">Good Evening</p>
+        <p>The hour is: <span ng-bind="hourOfDay"></span ></p>
+        <p ng-bind="hourOfDay"></p>
+    </div>
+    <script>
+        var module = angular.module("myApp", [])
+        module.controller("MainCtrl", Main);
+
+        function Main($scope) {
+            $scope.hourOfDay = 9
+        }
+    </script>
+</body>
+
+</html>  
